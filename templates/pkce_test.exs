@@ -4,12 +4,12 @@ defmodule PkceTest do
   alias KindeClientSDK
   alias Plug.Conn
 
-  @domain "https://elixirsdk.kinde.com"
-  @redirect_url "http://localhost:4000/callback"
-  @client_id "48e3345e636c4e33a2fd44413d252138"
-  @client_secret "dPEIzTGS8TNGPiH0HXOXuF9f7p8Pm6zV4VOjgZsFkiR5muN9m"
+  @domain Application.get_env(:kinde_management_api, :domain)
+  @redirect_url Application.get_env(:kinde_management_api, :redirect_url)
+  @client_id Application.get_env(:kinde_management_api, :backend_client_id)
+  @client_secret Application.get_env(:kinde_management_api, :client_secret)
   @grant_type :authorization_code_flow_pkce
-  @logout_redirect_url "http://localhost:4000/logout"
+  @logout_redirect_url Application.get_env(:kinde_management_api, :logout_redirect_url)
 
   setup_all do
     {:ok, conn: Plug.Test.conn(:get, "/") |> Plug.Test.init_test_session(%{})}
