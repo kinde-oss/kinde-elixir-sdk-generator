@@ -1,0 +1,26 @@
+additionalProperties:
+  artifactId: test-artifact
+files:
+  authorization_code.ex:
+    destinationFilename: lib/kinde_management_api/sdk/authorization_code.ex
+  client_credentials.ex:
+    destinationFilename: lib/kinde_management_api/sdk/client_credentials.ex
+  pkce.ex:
+    destinationFilename: lib/kinde_management_api/sdk/pkce.ex
+  utils.ex:
+    destinationFilename: lib/kinde_management_api/sdk/utils.ex
+  kinde_cache.ex:
+    destinationFilename: lib/kinde_management_api/kinde_cache.ex
+  kinde_client_sdk.ex:
+    destinationFilename: lib/kinde_management_api/kinde_client_sdk.ex
+  authorization_code_test.exs:
+    destinationFilename: test/authorization_code_test.exs
+  client_credentials_test.exs:
+    destinationFilename: test/client_credentials_test.exs
+  pkce_test.exs:
+    destinationFilename: test/pkce_test.exs
+  kinde_client_sdk_test.exs:
+    destinationFilename: test/kinde_client_sdk_test.exs
+  utils_test.exs:
+    destinationFilename: test/utils_test.exs
+  
