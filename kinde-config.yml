@@ -23,4 +23,8 @@ files:
     destinationFilename: test/kinde_client_sdk_test.exs
   utils_test.exs:
     destinationFilename: test/utils_test.exs
+  client_test_helper.exs:
+    destinationFilename: test/client_test_helper.exs
+  test_helper.exs:
+    destinationFilename: test/test_helper.exs
   
