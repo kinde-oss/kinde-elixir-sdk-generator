@@ -1,30 +1,30 @@
 additionalProperties:
   artifactId: test-artifact
 files:
-  authorization_code.ex:
+  ../kinde-elixir-sdk/lib/kinde_management_api/sdk/authorization_code.ex:
     destinationFilename: lib/kinde_management_api/sdk/authorization_code.ex
-  client_credentials.ex:
+  ../kinde-elixir-sdk/lib/kinde_management_api/sdk/client_credentials.ex:
     destinationFilename: lib/kinde_management_api/sdk/client_credentials.ex
-  pkce.ex:
+  ../kinde-elixir-sdk/lib/kinde_management_api/sdk/pkce.ex:
     destinationFilename: lib/kinde_management_api/sdk/pkce.ex
-  utils.ex:
+  ../kinde-elixir-sdk/lib/kinde_management_api/sdk/utils.ex:
     destinationFilename: lib/kinde_management_api/sdk/utils.ex
-  kinde_cache.ex:
+  ../kinde-elixir-sdk/lib/kinde_management_api/kinde_cache.ex:
     destinationFilename: lib/kinde_management_api/kinde_cache.ex
-  kinde_client_sdk.ex:
+  ../kinde-elixir-sdk/lib/kinde_management_api/kinde_client_sdk.ex:
     destinationFilename: lib/kinde_management_api/kinde_client_sdk.ex
-  authorization_code_test.exs:
+  ../kinde-elixir-sdk/test/authorization_code_test.exs:
     destinationFilename: test/authorization_code_test.exs
-  client_credentials_test.exs:
+  ../kinde-elixir-sdk/test/client_credentials_test.exs:
     destinationFilename: test/client_credentials_test.exs
-  pkce_test.exs:
+  ../kinde-elixir-sdk/test/pkce_test.exs:
     destinationFilename: test/pkce_test.exs
-  kinde_client_sdk_test.exs:
+  ../kinde-elixir-sdk/test/kinde_client_sdk_test.exs:
     destinationFilename: test/kinde_client_sdk_test.exs
-  utils_test.exs:
+  ../kinde-elixir-sdk/test/utils_test.exs:
     destinationFilename: test/utils_test.exs
-  client_test_helper.exs:
+  ../kinde-elixir-sdk/test/client_test_helper.exs:
     destinationFilename: test/client_test_helper.exs
-  test_helper.exs:
+  ../kinde-elixir-sdk/test/test_helper.exs:
     destinationFilename: test/test_helper.exs
   
