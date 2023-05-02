@@ -8,13 +8,13 @@ Change the first part of file list to the path of the SDK files. In case the SDK
 
 For example, yml file will become for each file from:
 ```yml
-../kinde-elixir-sdk/lib/kinde_management_api/sdk/authorization_code.ex:
-    destinationFilename: lib/kinde_management_api/sdk/authorization_code.ex
+../kinde-elixir-sdk/lib/kinde_sdk/sdk/authorization_code.ex:
+    destinationFilename: lib/kinde_sdk/sdk/authorization_code.ex
 ```
 to:
 ```yml
 /path/to/sdk/authorization_code.ex:
-    destinationFilename: lib/kinde_management_api/sdk/authorization_code.ex
+    destinationFilename: lib/kinde_sdk/sdk/authorization_code.ex
 ```
 
 ## Generate
