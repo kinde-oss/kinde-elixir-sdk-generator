@@ -1,7 +1,7 @@
 openapi: 3.0.0
 info:
   version: '1.0.0'
-  title: Kinde Management API
+  title: Kinde SDK
   description: Provides endpoints to manage your Kinde Businesses
   termsOfService: https://kinde.com/docs/important-information/terms-of-service
   contact:
