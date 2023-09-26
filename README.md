@@ -1,6 +1,6 @@
 # Kinde Elixir Generator
 
-The generator for the [Kinde Elixir SDK](<[link-to-sdk-repo](https://github.com/kinde-oss/kinde-elixir-sdk)>).
+The generator for the [Kinde Elixir SDK](https://github.com/kinde-oss/kinde-elixir-sdk).
 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://makeapullrequest.com) [![Kinde Docs](https://img.shields.io/badge/Kinde-Docs-eee?style=flat-square)](https://kinde.com/docs/developer-tools) [![Kinde Community](https://img.shields.io/badge/Kinde-Community-eee?style=flat-square)](https://thekindecommunity.slack.com)
 
@@ -57,11 +57,10 @@ cd kinde-elixir-sdk
 
 ## SDK documentation
 
-[Elixir SDK](<[link-to-kinde-doc](https://kinde.com/docs/developer-tools/elixir-sdk)>)
+[Elixir SDK](https://kinde.com/docs/developer-tools/elixir-sdk)
 
 ## Development
 
-**`<todo>`**
 ### Update config file
 `kinde-config.yml` is the config file which will generate the SDK files. We'll need to update the config file with SDK file paths.
 
@@ -88,8 +87,6 @@ Install the following dependency after generation:
 {:jason, "~> 1.3"},
 {:httpoison, "~> 0.7"}
 ```
-
-**`</todo>`**
 
 ## Contributing
 
