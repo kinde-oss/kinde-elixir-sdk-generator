@@ -6,11 +6,12 @@ The generator for the [Kinde Elixir SDK](https://github.com/kinde-oss/kinde-elix
 
 ## Overview
 
-This generator creates an SDK in elixir that can authenticate to Kinde using the Authorization Code grant or the Authorization Code with PKCE grant via the [OAuth 2.0 protocol](https://oauth.net/2/). It can also access the [Kinde Management API](https://kinde.com/api/docs/#kinde-management-api) using the client credentials grant.
+This generator creates an SDK in Elixir that can authenticate to Kinde using the Authorization Code grant or the Authorization Code with PKCE grant via the [OAuth 2.0 protocol](https://oauth.net/2/). It can also access the [Kinde Management API](https://kinde.com/api/docs/#kinde-management-api) using the client credentials grant.
 
 Also, see the SDKs section in Kinde’s [contributing guidelines](https://github.com/kinde-oss/.github/blob/main/.github/CONTRIBUTING.md).
 
 ## Usage
+
 ### Initial set up
 
 1. Clone the repository to your machine:
@@ -37,19 +38,9 @@ Run the following commands to generate the SDK:
 openapi-generator-cli generate -i kinde.yml -g elixir -c kinde-config.yml -o kinde-elixir-sdk --skip-validate-spec
 ```
 
-OR
+**Note:** Instead of `openapi-generator-cli`, you can also use: `openapi-generator`.
 
-```bash
-openapi-generator generate -i kinde.yml -g elixir -c kinde-config.yml -o kinde-elixir-sdk --skip-validate-spec
-```
-
-**Note:** The API specifications should always point to Kinde's hosted version: https://kinde.com/api/kinde-mgmt-api-specs.yaml. This is set via the ` -i` option in the [OpenAPI Generator CLI](https://openapi-generator.tech/docs/usage/), for example:
-
-```bash
-openapi-generator-cli generate -i https://kinde.com/api/kinde-mgmt-api-specs.yaml
-```
-
-The SDK gets outputted to: /kinde-elixir-sdk-generator/kinde-elixir-sdk, which you can enter via:
+The SDK gets outputted to: `kinde-elixir-sdk`, which you can enter via:
 
 ```bash
 cd kinde-elixir-sdk
@@ -62,22 +53,26 @@ cd kinde-elixir-sdk
 ## Development
 
 ### Update config file
-`kinde-config.yml` is the config file which will generate the SDK files. We'll need to update the config file with SDK file paths.
 
-Change the first part of file list to the path of the SDK files. In case the SDK is located at the previous directory, no changes are needed to be made.
+`kinde-config.yml` is the config file that generates the SDK files, and you will need to update the config file with the SDK file paths.
 
-For example, yml file will become for each file from:
+Change the first part of the file list to the path of the SDK files. In case the SDK is located at the previous directory, no changes are needed to be made.
+
+For example, the YAML file will become for each file from:
+
 ```yml
 ../kinde-elixir-sdk/lib/kinde_sdk/sdk/authorization_code.ex:
     destinationFilename: lib/kinde_sdk/sdk/authorization_code.ex
 ```
-to:
+
+To:
+
 ```yml
 /path/to/sdk/authorization_code.ex:
     destinationFilename: lib/kinde_sdk/sdk/authorization_code.ex
 ```
 
-### Usage
+### Dependencies
 
 Install the following dependency after generation:
 
